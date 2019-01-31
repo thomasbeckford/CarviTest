@@ -20,20 +20,20 @@ cd CarviTest
 ```
 Tercer paso
 ```
-yarn install
+yarn install | cd client
 ```
 Cuarto paso
+```
+yarn install | cd ..
+```
+Quinto paso
 ```
 yarn dev
 ```
 La aplicacion empezo a funcionar, el sevidor levanto en el puerto 5000 mientras que el cliente en el puerto 3000.
 Para ver la app, si no se abro solo, deben ingresar esto en el navegador:
 
-Quinto paso
-```
-http://localhost:3000/
-```
-
+http://localhost:3000
 
 ## Creado con
 
