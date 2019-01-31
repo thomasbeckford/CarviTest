@@ -1,0 +1,404 @@
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+html, body { background-color: #F6F7FA!important;padding: 0;margin: 0 auto!important; }
+html, body {
+height: 100%!important;background-color: white;
+}
+nav.navbar { background-color: #00FF82; padding: 0px; height: 72px }
+
+.CarFooter{
+	display: none;
+}
+
+.CarBottomFooter {
+	display: none
+}
+
+span.nav-link{
+	margin-right: 20px;
+}
+.navbar-nav.mr-auto{
+	width: 431px;
+	margin-left: 120px;
+}
+.imgCarvi{
+	margin: 16px 0 19px 119px ;
+	width: 127px;
+	height: 37px;
+	padding: 0;
+}
+
+.FilterTexts img{
+	display: none
+}
+
+.hide{
+		
+	position: absolute;
+	top:120px;
+	width: 300px;
+}
+.block{
+		
+	position: absolute;
+	top:120px;
+	width: 300px;
+}
+
+.brandBut { border:none; background-color: transparent; }
+.brandBut img{ width: 41px } 
+div.brandImages {width: 250px; margin: 0 auto}
+
+.openFilter {
+	display: none;
+}
+
+.closeFilter{
+	display: none;
+}
+
+
+.FilterComponent {
+	height: 100%;
+	width: 360px;
+	background: #F6F7FA;
+  	z-index: 1;
+	top:100px;
+  	position: absolute;
+}
+
+.ListComponent {
+	margin-left: 360px; 
+	font-size: 28px;
+	padding: 0px 10px;
+}
+
+.carBox{
+	width: 285px;
+	border-radius: 3px;
+	background: #FFFFFF!important;
+	border: 1px solid #E2E2E2;
+	box-sizing: border-box;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 3px;
+	float: left;
+	margin: 0 10px 50px 0;
+
+
+}
+
+.carBrandName{
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 19px;
+	font-size: 16px;
+	text-align: center;
+	color: #666B76;
+	margin-bottom: 4px;
+
+}
+
+.carName{
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	line-height: 19px;
+	font-size: 16px;
+	text-align: center;
+	color: #3E414A;
+}
+
+hr{
+	border: 1px solid #E2E2E2;
+}
+
+.carBoxFooter{
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	line-height: 19px;
+	font-size: 16px;
+	text-align: center;
+	height: 80px;
+	color: #3E414A;
+}
+
+
+.carBox img {
+	height: 283px;
+	width: 100%;
+	
+}
+
+
+.carColors {
+	border: 1px solid #D3D2D2;
+	box-sizing: border-box;
+	border-radius: 3px;
+	width: 27px;
+	height: 28px;
+	margin: 0 auto;
+}
+
+.FilterTexts span {
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 16px;
+	font-size: 14px;
+	color: #666B76;
+}
+
+.FilterTexts p {
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 19px;
+	font-size: 16px;
+	margin-top: 30px;
+	color: #3E414A;
+	margin-bottom: 0px
+
+}
+
+.FilterTexts{
+	width: 250px; margin: 0 auto;
+	padding-left: 10px;
+	text-align: center;
+
+}
+
+.breadcrumb {
+	padding-left: 370px!important;
+	background-color: #F6F7FA!important;
+	margin: 0!important;
+}
+
+
+.mobileHR{
+	display: none;
+}
+
+
+
+
+/*MOBILE*/
+
+
+
+@media only screen and (max-width: 600px) {
+
+.FilterTexts img{
+	display: block;
+	padding: 20px 0 20px 0;
+}
+
+.mobileHR{
+	display: block;
+	width: 100%!important;
+	border: 1px solid #666B76;
+	color: white;
+}
+
+.FilterComponent {
+		
+	width: 100%;
+	background: #F6F7FA;
+  	z-index: 1;
+	top:60px;
+  	position: absolute;
+}
+
+.FilterTexts h3, span, img, p{
+	position: relative;
+	margin: 0 auto;
+	color: #fff;
+}
+
+
+.carBrandImages {
+
+	z-index: 5;
+	position: absolute;
+}
+
+
+.brandImages {background:#3E414A ;}
+
+.openFilter{
+	width: 100%;
+	background-color: #3E414A;
+	height: 70px;
+	overflow-y: scroll;
+	display: inline-block;
+
+}
+
+.breadcrumb img{
+	display: none;
+}
+
+.hide{
+	display: none;
+}
+
+.block{
+	display: block;
+	position: absolute;
+	top:80px;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+}
+
+div.openFilter p{
+	display: none;
+}
+
+.FloatDiv{
+	display: inline-block;
+}
+
+div.closeFilter {
+  display: block;
+  width: 100%;
+  height: 69px;
+  background-color: #3E414A;
+}
+
+.ListComponent {
+  margin: 20px 0 0 0;
+  text-align: center;
+  font-size: 28px;
+  background-color: #FFF
+
+
+}
+
+.carBox{
+	margin: 10px 20px 20px 0px;
+	border-radius: 3px;
+	background: #FFFFFF;
+	border: 1px solid #E2E2E2;
+	box-sizing: border-box;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 3px;
+  width: 100%;
+  
+
+}
+nav.navbar{
+	height: 75px;
+}
+
+
+.imgCarvi{
+    margin: 16px 0 19px 26px;
+	width: 93px;
+	height: 28px;
+	padding: 0;
+}
+
+div.breadcrumb{
+	position: absolute!important;
+	top:100px!important;
+	padding: 0!important;
+}
+
+div.closeFilter{
+
+
+  background-color: #3E414A;
+
+}
+
+	
+
+div.openFilter{
+  position: relative;
+  display: block;
+  width: 100%;
+  height:350px;
+  background-color: #3E414A;
+
+}
+
+p{
+	text-align: center;
+	color: #FFF;
+}
+
+
+.hide{
+	display: none;
+}
+	
+
+
+div.CarBottomFooter{
+	display: block;
+	text-align: center;
+	background-color:#242424;
+	
+
+
+}
+
+.CarBottomFooter img {
+	width: 164px;
+	height: 100px;
+}
+
+
+.CarBottomFooter p{
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	line-height: 16px;
+	font-size: 14px;
+	color: #666B76;
+	text-transform: uppercase;
+
+}
+
+.CarBottomFooter{
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 16px;
+	font-size: 14px;
+	text-align: center;
+
+}
+
+
+img.Partners {
+
+	width: 123px;
+	height: 29px;
+	margin: 10px;
+}
+
+img.social{
+	width: 60px;
+	height: 60px;
+}
+
+hr {
+	margin: 0;
+}
+
+.BottomFooter{
+
+	background-color:#3C3C3C;
+	padding-bottom:20px;
+}
+
+.BottomFooter p {
+padding-top: 20px;
+}
+
+}

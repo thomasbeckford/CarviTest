@@ -1,0 +1,59 @@
+import React, { Component } from 'react';
+import './App.css';
+//  import axios from 'axios'
+import Header from './components/Header'
+// import Loadable from 'react-loadable'
+import List from './components/List'
+import Aside from './components/Aside'
+
+
+
+class App extends Component {
+
+  state = {
+      cars: [],
+      brands: [],
+  };
+    
+  componentDidMount(){
+      Promise.all([
+          fetch('/api/cars?q='),
+          fetch('/api/brands')
+      ])
+      .then(([res1, res2]) => Promise.all([res1.json(), res2.json()]))
+      .then(([data1, data2]) => this.setState({
+          cars: data1, 
+          brands: data2
+      }));
+  }
+    
+  selectBrand = name => { 
+    this.setState({
+      selectedBrand: name
+    })
+  }
+
+ 
+
+
+
+render() {
+      
+    const { cars, brands, selectedBrand, carBrand } = this.state;
+    const selectedValue = selectedBrand && brands.find(x => x.name === selectedBrand)
+    console.log(selectedValue)
+      return (  
+      <React.Fragment>
+        <Header/>   
+        <div className="flex-box">
+          <Aside handleClick={this.selectBrand} brands={brands} />
+          <List cars={cars} selectedBrand={selectedBrand}/>
+        </div>
+      </React.Fragment>
+    );
+ }
+
+
+}
+
+export default App;
