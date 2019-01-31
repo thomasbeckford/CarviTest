@@ -3,6 +3,7 @@
 ### Prerequisitos
 
 ```
+YARN
 NODEJS
 EXPRESS
 ```
